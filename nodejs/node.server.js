@@ -1,17 +1,27 @@
+// creating a node server 
+
 const http = require('http');
 
 
 
 
 const app = http.createServer((req,res)=>{
+
     if(req.url=="/"){
+
      res.writeHead(200,{"content-type":"text/plain"})
+
      res.end("this is the root router")
+
     }else if (req.url=='/home'){
+
         res.writeHead(200,{"content-type":"text/plain"});
+
         res.end("this is home page")
+
     }else{
         res.writeHead(400,{"content-type":"text/plain"})
+
         res.end('Bad request')
     }
 })

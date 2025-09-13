@@ -1,3 +1,5 @@
+//path params example
+
 const express  = require('express');
 const app = express();
 
@@ -16,4 +18,5 @@ app.listen(4004,()=>{
     console.log(`your server running on 4004`)
 })
 
+//http://localhost:4004/shop/sanu   url
 
